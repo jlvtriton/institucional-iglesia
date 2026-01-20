@@ -1,0 +1,125 @@
+/* ==============================
+   APP LA LUZ DE DIOS
+   Estilos generales
+   ============================== */
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ==============================
+   Navbar
+   ============================== */
+
+.navbar-brand {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   Títulos
+   ============================== */
+
+h1, h2, h3, h4 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  border-bottom: 3px solid #ffc107;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* ==============================
+   Cards
+   ============================== */
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card h4 {
+  font-weight: bold;
+}
+
+.card p {
+  margin-bottom: 0.8rem;
+}
+
+/* ==============================
+   Botones
+   ============================== */
+
+.btn-warning {
+  color: #000;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 6px 18px;
+}
+
+.btn-warning:hover {
+  background-color: #ffca2c;
+}
+
+/* ==============================
+   Texto bíblico
+   ============================== */
+
+.versiculo {
+  font-style: italic;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* ==============================
+   Listas (Valores)
+   ============================== */
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+
+footer {
+  font-size: 0.85rem;
+}
+
+/* ==============================
+   Responsive (App móvil)
+   ============================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="text-center mb-4">
+  <h1 class="fw-bold text-warning">La Luz de Dios</h1>
+  <p class="lead">App Interna – Manual Institucional</p>
+  <p><strong>“Vosotros sois la luz del mundo”</strong> – Mateo 5:14</p>
+</div>
+
+<div class="row g-3">
+  <div class="col-md-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4>🌟 Visión</h4>
+        <p>Conoce hacia dónde Dios nos guía.</p>
+        <a href="{{ url_for('vision') }}" class="btn btn-warning btn-sm">Ver</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4>🎯 Misión</h4>
+        <p>Descubre nuestro llamado como iglesia.</p>
+        <a href="{{ url_for('mision') }}" class="btn btn-warning btn-sm">Ver</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
