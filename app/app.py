@@ -27,6 +27,3 @@ def manual():
 def puntos_doctrinales():
     return render_template("manual/puntos_doctrinales.html")
 
-
-if __name__ == "__main__":
-    app.run(debug=True)
