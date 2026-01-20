@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
+from textos_biblicos import BIBLIA_RVR
 
 app = Flask(__name__)   # 👈 AQUÍ se define la app
 
@@ -27,3 +28,9 @@ def manual():
 def puntos_doctrinales():
     return render_template("manual/puntos_doctrinales.html")
 
+@app.route("/biblia/<clave>")
+def obtener_texto_biblico(clave):
+    texto = BIBLIA_RVR.get(clave)
+    if texto:
+        return jsonify(texto)
+    return jsonify({"texto": "Texto no encontrado", "version": ""})
