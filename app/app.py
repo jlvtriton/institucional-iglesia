@@ -24,6 +24,11 @@ def valores():
 def manual():
     return render_template("manual/manual.html")
 
+@app.route("/escala")
+def puntos_doctrinales():
+    return render_template("manual/escala.html")
+
+
 @app.route("/puntos_doctrinales")
 def puntos_doctrinales():
     return render_template("manual/puntos_doctrinales.html")
