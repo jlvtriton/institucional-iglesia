@@ -1,20 +1,39 @@
-/* ==============================
-   APP LA LUZ DE DIOS
-   Estilos generales
-   ============================== */
+/* ================================
+   VARIABLES DE COLOR (IDENTIDAD)
+================================ */
+:root {
+  --ldd-primary: #f5c400;   /* Dorado suave */
+  --ldd-dark: #212529;      /* Oscuro elegante */
+  --ldd-light: #f8f9fa;     /* Fondo claro */
+  --ldd-text: #343a40;
+  --ldd-biblia: #5a4a00;
+}
 
+/* ================================
+   BASE GENERAL
+================================ */
 body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--ldd-light);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--ldd-text);
   line-height: 1.6;
 }
 
-/* ==============================
-   Navbar
-   ============================== */
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+  background: linear-gradient(90deg, #f5c400, #ffd84d);
+}
 
 .navbar-brand {
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .nav-link {
@@ -25,101 +44,83 @@ body {
   text-decoration: underline;
 }
 
-/* ==============================
-   Títulos
-   ============================== */
-
-h1, h2, h3, h4 {
-  margin-bottom: 1rem;
+/* ================================
+   CONTENEDOR PRINCIPAL
+================================ */
+.container {
+  max-width: 960px;
 }
 
-h2 {
-  border-bottom: 3px solid #ffc107;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-}
-
-/* ==============================
-   Cards
-   ============================== */
-
+/* ================================
+   CARDS GENERALES
+================================ */
 .card {
   border: none;
   border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
-.card-body {
-  padding: 1.5rem;
+.card + .card {
+  margin-top: 1.5rem;
 }
 
-.card h4 {
-  font-weight: bold;
+/* ================================
+   TEXTO BÍBLICO (MODAL)
+================================ */
+#bibliaModal .modal-content {
+  border-radius: 14px;
 }
 
-.card p {
-  margin-bottom: 0.8rem;
+#bibliaModal .modal-header {
+  background-color: var(--ldd-dark);
 }
 
-/* ==============================
-   Botones
-   ============================== */
-
-.btn-warning {
-  color: #000;
-  font-weight: 600;
-  border-radius: 20px;
-  padding: 6px 18px;
+#bibliaModal .modal-body {
+  background-color: #fffbe6;
 }
 
-.btn-warning:hover {
-  background-color: #ffca2c;
-}
-
-/* ==============================
-   Texto bíblico
-   ============================== */
-
-.versiculo {
+#textoBiblico {
+  font-size: 1.1rem;
   font-style: italic;
-  color: #555;
-  margin-top: 15px;
+  color: var(--ldd-biblia);
+  line-height: 1.8;
 }
 
-/* ==============================
-   Listas (Valores)
-   ============================== */
-
-ul {
-  padding-left: 1.2rem;
+/* ================================
+   CITAS BÍBLICAS (LINKS)
+================================ */
+.cita-biblica {
+  text-decoration: none;
+  font-weight: 600;
+  color: #b68b00;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
 }
 
-ul li {
-  margin-bottom: 8px;
+.cita-biblica:hover {
+  background-color: #fff3cd;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-/* ==============================
-   Footer
-   ============================== */
-
+/* ================================
+   FOOTER
+================================ */
 footer {
-  font-size: 0.85rem;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
 }
 
-/* ==============================
-   Responsive (App móvil)
-   ============================== */
-
+/* ================================
+   RESPONSIVE
+================================ */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.6rem;
-  }
-
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
-  .navbar-brand {
-    font-size: 1.1rem;
+  #textoBiblico {
+    font-size: 1rem;
   }
 }

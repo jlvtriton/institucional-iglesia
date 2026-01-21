@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     document.querySelectorAll(".cita-biblica").forEach(function (elemento) {
+
         elemento.addEventListener("click", function (e) {
             e.preventDefault();
 
@@ -8,14 +10,22 @@ document.addEventListener("DOMContentLoaded", function () {
             fetch(`/biblia/${clave}`)
                 .then(response => response.json())
                 .then(data => {
+
                     document.getElementById("textoBiblico").innerText = data.texto;
                     document.getElementById("versionBiblica").innerText = data.version;
 
                     const modal = new bootstrap.Modal(
                         document.getElementById("bibliaModal")
                     );
+
                     modal.show();
+                })
+                .catch(error => {
+                    console.error("Error al cargar el texto bíblico:", error);
                 });
+
         });
+
     });
+
 });

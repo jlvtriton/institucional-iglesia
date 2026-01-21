@@ -28,9 +28,22 @@ def manual():
 def puntos_doctrinales():
     return render_template("manual/puntos_doctrinales.html")
 
+#@app.route("/biblia/<clave>")
+#def obtener_texto_biblico(clave):
+#    texto = BIBLIA_RVR.get(clave)
+#    if texto:
+#        return jsonify(texto)
+#    return jsonify({"texto": "Texto no encontrado", "version": ""})
+
+
 @app.route("/biblia/<clave>")
-def obtener_texto_biblico(clave):
-    texto = BIBLIA_RVR.get(clave)
-    if texto:
-        return jsonify(texto)
-    return jsonify({"texto": "Texto no encontrado", "version": ""})
+def biblia(clave):
+    if clave in BIBLIA_RVR:
+        return jsonify({
+            "texto": BIBLIA_RVR[clave]["texto"],
+            "version": "Reina-Valera Revisada"
+        })
+    return jsonify({
+        "texto": "Texto no encontrado.",
+        "version": ""
+    })
