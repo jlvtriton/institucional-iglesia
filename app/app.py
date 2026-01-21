@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify
-from textos_biblicos import BIBLIA_RVR
+from app.textos_biblicos import BIBLIA_RVR
 
 app = Flask(__name__)   # 👈 AQUÍ se define la app
 
