@@ -1,120 +1,249 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<h2 class="text-warning">🌟 Principales Puntos Doctrinales</h2>
+<div class="text-center mb-4">
+  <h2 class="text-warning">📜 Lo que Creemos</h2>
+  <p class="text-muted fst-italic">
+    Fundamentos doctrinales basados en la Palabra de Dios
+  </p>
+</div>
 
-  <!-- DECLARACIÓN DOCTRINAL -->
-  <section>
-    <h3 class="fw-bold text-primary mb-3">Declaración Doctrinal</h3>
+<div class="accordion" id="doctrinaAccordion">
 
-    <div class="accordion" id="doctrinaAccordion">
-
-      <!-- Punto 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#doc1">
-            1. La Biblia como Palabra de Dios
-          </button>
-        </h2>
-        <div id="doc1" class="accordion-collapse collapse show" data-bs-parent="#doctrinaAccordion">
-          <div class="accordion-body">
-            Creemos que la Biblia es la Palabra inspirada de Dios, autoridad suprema y final en fe y conducta cristiana. Revela el carácter de Dios, su plan de salvación y su voluntad para la humanidad.
-            <br><strong>Base bíblica:</strong> 2 Timoteo 3:16–17; 2 Pedro 1:20–21.
-          </div>
-        </div>
+  <!-- 1. La Biblia -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+        data-bs-target="#doctrina1">
+        📖 La Biblia
+      </button>
+    </h2>
+    <div id="doctrina1" class="accordion-collapse collapse show"
+      data-bs-parent="#doctrinaAccordion">
+      <div class="accordion-body">
+        <p>
+          Creemos que la Biblia, compuesta por el Antiguo y el Nuevo Testamento, es la Palabra de Dios inspirada, revelada por el Espíritu Santo a los autores humanos. Afirmamos que las Sagradas Escrituras son verdaderas, confiables y suficientes, y constituyen la autoridad suprema y final en todo lo relacionado con la fe cristiana, la doctrina y la conducta del creyente.
+          Reconocemos que la Biblia revela el carácter de Dios, su plan de salvación y su voluntad para la humanidad. Por lo tanto, toda enseñanza, tradición o experiencia espiritual debe ser evaluada y sometida a la luz de la Palabra de Dios.
+        </p>
+        <p>
+          👉 <a href="#" class="cita-biblica" data-clave="2_Timoteo_3_16_17">
+            2 Timoteo 3:16-17
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="2_Pedro_1_20_21">
+            2 Pedro 1:20–21
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Salmos_119_105">
+            Salmos 119:105
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Isaías_40_8">
+            Isaías 40:8
+          </a>
+            
+        </p>
       </div>
-
-      <!-- Punto 2 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doc2">
-            2. La Trinidad
-          </button>
-        </h2>
-        <div id="doc2" class="accordion-collapse collapse" data-bs-parent="#doctrinaAccordion">
-          <div class="accordion-body">
-            Creemos en un solo Dios verdadero que existe eternamente en tres personas: Padre, Hijo y Espíritu Santo, iguales en esencia, poder y gloria.
-            <br><strong>Base bíblica:</strong> Mateo 28:19; 2 Corintios 13:14.
-          </div>
-        </div>
-      </div>
-
-      <!-- Punto 3 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doc3">
-            3. Jesucristo, único Salvador
-          </button>
-        </h2>
-        <div id="doc3" class="accordion-collapse collapse" data-bs-parent="#doctrinaAccordion">
-          <div class="accordion-body">
-            Creemos que Jesucristo es verdadero Dios y verdadero hombre, quien murió y resucitó para la salvación de la humanidad. Él es el único mediador entre Dios y los hombres.
-            <br><strong>Base bíblica:</strong> Juan 14:6; Hechos 4:12.
-          </div>
-        </div>
-      </div>
-
-      <!-- Punto 4 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doc4">
-            4. Salvación por Gracia
-          </button>
-        </h2>
-        <div id="doc4" class="accordion-collapse collapse" data-bs-parent="#doctrinaAccordion">
-          <div class="accordion-body">
-            Creemos que la salvación es un don gratuito de Dios, recibido por fe en Jesucristo y no por obras humanas.
-            <br><strong>Base bíblica:</strong> Efesios 2:8–9.
-          </div>
-        </div>
-      </div>
-
-      <!-- Punto 5 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doc5">
-            5. El Nuevo Nacimiento
-          </button>
-        </h2>
-        <div id="doc5" class="accordion-collapse collapse" data-bs-parent="#doctrinaAccordion">
-          <div class="accordion-body">
-            Creemos que toda persona necesita nacer de nuevo por la obra del Espíritu Santo, experimentando una transformación espiritual real.
-            <br><strong>Base bíblica:</strong> Juan 3:3; 2 Corintios 5:17.
-          </div>
-        </div>
-      </div>
-
-      <!-- Punto 6 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doc6">
-            6. El Espíritu Santo
-          </button>
-        </h2>
-        <div id="doc6" class="accordion-collapse collapse" data-bs-parent="#doctrinaAccordion">
-          <div class="accordion-body">
-            Creemos en la obra del Espíritu Santo, quien guía, santifica y capacita a los creyentes mediante dones espirituales.
-            <br><strong>Base bíblica:</strong> Juan 16:8; 1 Corintios 12:4–7.
-          </div>
-        </div>
-      </div>
-
-      <!-- Punto 7 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doc7">
-            7. La Iglesia y la Segunda Venida de Cristo
-          </button>
-        </h2>
-        <div id="doc7" class="accordion-collapse collapse" data-bs-parent="#doctrinaAccordion">
-          <div class="accordion-body">
-            Creemos que la Iglesia es el cuerpo de Cristo y que Jesucristo regresará de manera literal y gloriosa.
-            <br><strong>Base bíblica:</strong> Mateo 28:19–20; Hechos 1:11.
-          </div>
-        </div>
-      </div>
-
     </div>
-  </section>
+  </div>
+
+  <!-- 2. Dios -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#doctrina2">
+        ✝️ Dios Trino
+      </button>
+    </h2>
+    <div id="doctrina2" class="accordion-collapse collapse"
+      data-bs-parent="#doctrinaAccordion">
+      <div class="accordion-body">
+        <p>
+          Creemos en un solo Dios verdadero, eterno, creador de todas las cosas, quien existe en tres personas: Padre, Hijo y Espíritu Santo. Estas tres personas son distintas, pero iguales en esencia, poder y gloria.
+          Dios Padre es el origen de todas las cosas; Dios Hijo es el Redentor de la humanidad; y Dios Espíritu Santo es quien obra en el corazón del creyente para su regeneración, santificación y dirección espiritual.
+        </p>
+        <p>
+          👉 <a href="#" class="cita-biblica" data-clave="Deuteronomio_6_4">
+            Deuteronomio 6:4
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Mateo_28_19">
+            Mateo 28:19
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="2_Corintios_13_14">
+            2 Corintios 13:14
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Jesucristo -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#doctrina3">
+        ✝️ Jesucristo el Hijo de Dios y único Salvador
+      </button>
+    </h2>
+    <div id="doctrina3" class="accordion-collapse collapse"
+      data-bs-parent="#doctrinaAccordion">
+      <div class="accordion-body">
+        <p>
+          Creemos que Jesucristo es el Hijo unigénito de Dios, verdadero Dios y verdadero hombre. Fue concebido por obra del Espíritu Santo, nació de la virgen María, vivió una vida santa y sin pecado, murió en la cruz como sacrificio sustitutorio por los pecados de la humanidad, resucitó corporalmente al tercer día y ascendió al cielo.
+          Afirmamos que Jesucristo es el único Salvador y mediador entre Dios y los hombres, y que la salvación solo es posible por medio de la fe personal en Él y en su obra redentora.
+        </p>
+        <p>
+          👉 <a href="#" class="cita-biblica" data-clave="Juan_1_1_14">
+            Juan 1:1,14
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Juan_14_6">
+            Juan 14:6
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Hechos_4_12">
+            Hechos 4:12
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="1_Timoteo_2_5">
+            1 Timoteo 2:5
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Salvación -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#doctrina4">
+        ❤️ Salvación por Gracia mediante la Fe
+      </button>
+    </h2>
+    <div id="doctrina4" class="accordion-collapse collapse"
+      data-bs-parent="#doctrinaAccordion">
+      <div class="accordion-body">
+        <p>
+          Creemos que la salvación es un regalo de Dios otorgado únicamente por su gracia, recibido mediante la fe en Jesucristo. El ser humano, separado de Dios por el pecado, no puede alcanzar la salvación por obras, méritos personales o esfuerzos religiosos.
+          Las buenas obras son el fruto natural de una vida transformada por Cristo y una evidencia de la fe genuina, pero nunca el medio para obtener la salvación.
+        </p>
+        <p>
+          👉 <a href="#" class="cita-biblica" data-clave="Efesios_2_8_9">
+            Efesios 2:8–9
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Romanos_3_23_24">
+            Romanos 3:23–24
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Tito_3_5">
+            Tito 3:5
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Espíritu Santo -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#doctrina5">
+        🔥 Espíritu Santo y su obra
+      </button>
+    </h2>
+    <div id="doctrina5" class="accordion-collapse collapse"
+      data-bs-parent="#doctrinaAccordion">
+      <div class="accordion-body">
+        <p>
+          Creemos en la persona y obra del Espíritu Santo, quien convence al mundo de pecado, justicia y juicio, regenera al creyente, mora en él y lo guía a una vida de santidad.
+          Creemos que el Espíritu Santo concede dones espirituales a los creyentes para la edificación de la iglesia, el servicio cristiano y el cumplimiento de la misión evangelizadora.
+        </p>
+        <p>
+          👉 <a href="#" class="cita-biblica" data-clave="Juan_16_8">
+            Juan 16:8
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Juan_16_13">
+            Juan 16:13
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="1_Corintios_12_4_7">
+            1 Corintios 12:4–7
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Gálatas_5_22_23">
+            Gálatas 5:22–23
+          </a>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. La Iglesia -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#doctrina6">
+        ⛪ La Iglesia
+      </button>
+    </h2>
+    <div id="doctrina6" class="accordion-collapse collapse"
+      data-bs-parent="#doctrinaAccordion">
+      <div class="accordion-body">
+        <p>
+          Creemos que la Iglesia es el cuerpo de Cristo, formada por todos los creyentes nacidos de nuevo,
+          llamada a edificar, discipular y servir, viviendo en comunión, adoración y proclamación del evangelio.
+        </p>
+        
+        <p>
+          👉 <a href="#" class="cita-biblica" data-clave="Mateo_28_19_20">
+            Mateo 28:19–20
+          </a>
+
+          👉 <a href="#" class="cita-biblica" data-clave="Efesios_4_12">
+            Efesios 4:12
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Segunda Venida -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#doctrina7">
+        🌅 Segunda Venida de Cristo
+      </button>
+    </h2>
+    <div id="doctrina7" class="accordion-collapse collapse"
+      data-bs-parent="#doctrinaAccordion">
+      <div class="accordion-body">
+        <p>
+          Creemos en la segunda venida literal y gloriosa de Jesucristo, quien regresará para juzgar al mundo, recompensar a los fieles y establecer plenamente su Reino eterno.
+        </p>
+        <!-- Lo que queda claro -->
+        <div class="card p-4 mb-4">
+          <h5 class="text-warning mb-3">🛠️ Puntos importantes:</h5>
+
+          <ul class="list-unstyled fs-5">
+            <li class="mb-2">✔ Que la segunda venida es literal, visible y gloriosa</li>
+            <li class="mb-2">✔ Que incluye resurrección, juicio y recompensa</li>
+            <li class="mb-2">✔ Que es una esperanza viva que impulsa santidad, fidelidad y misión</li>
+            <li class="mb-2">✔ El rol activo de la Iglesia mientras espera el regreso de Cristo</li>
+          </ul>
+        </div>
+
+
+
+
+        <p>
+          👉 <a href="#" class="cita-biblica" data-clave="Hechos_1_11">
+            Hechos 1:11
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="1_Tesalonicenses_4_16_17">
+            1 Tesalonicenses 4:16–17
+          </a>
+          👉 <a href="#" class="cita-biblica" data-clave="Apocalipsis_22_12">
+            Apocalipsis 22:12
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 {% endblock %}
